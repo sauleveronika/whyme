@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Athiti:wght@200&display=swap');
+
+body {
+    font-family: 'Athiti', sans-serif;
+    /*height: 100vh;*/
+    margin: 0px;
+    color: #EEEEEE;
+    background: linear-gradient(0deg, rgba(179,106,94,0.5046219171262255) 25%, rgba(181,108,94,1) 100%);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#landing h1{    
+    font-family: "Abel", sans-serif;
+    font-size: 170px;
+    transition: transform 0.5s;  
+    animation-name: fade_in_a;
+    animation-duration: 4s;
+    margin: 0px;
+}
+#landing a{
+    animation-name: fade_in_h3;
+    animation-duration: 4s;
+    font-size: 52px;
+    margin: -10px;
+
+}
+/*animation for the landing page 'Castworthy' link */
+#landing a::after{
+    content: "\203A";
+    color:rgba(238, 238, 238, 0);
+    transition: all 0s;
+}
+#landing a:hover::after{ 
+    color:rgb(255, 255, 255);
+}
+#landing a:hover{
+    color: white;
+}
+
+
+
+
+@keyframes fade_in_a {
+    0% {color:rgba(179,106,94,0);}
+    100% {color:  #EEEEEE;}   
+  }
+
+@keyframes fade_in_h3 {
+    0% {color:rgba(179,106,94,0);}
+    30% {color:rgba(179,106,94,0);}
+    100% {color:  #EEEEEE;}   
+}
+
